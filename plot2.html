@@ -1,0 +1,33 @@
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ParkVis</title>
+  <script src="lib/d3.js"></script>
+  <script src="js/parking.js"></script>
+  <style>
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+  </style>
+</head>
+<body onload="init()"> <!-- init() method defined in parking.js-->
+
+<div style="margin:30;">
+  <div style="display: table-cell; width: 150;">
+    <label for="ydropdown">Y: </label><select id="ydropdown">
+      <option val="Amount">Amount</option>
+      <option val="PaidDuration">PaidDuration</option>
+    </select>
+  </div>
+  <div style="display: table-cell; width: 150;">
+    <button id="update" onclick="updateClicked()">Update</button>
+  </div>
+</div>
+
+<div id="vis"></div>
+
+</body>
+</html>
