@@ -1,8 +1,8 @@
 var chart;
 // set margin, height, and width
 var margin = {top: 20, right: 20, bottom: 100, left: 100}, 
-height = 700 - margin.top - margin.bottom;
-width = 1200 - margin.left - margin.right;
+height = 550 - margin.top - margin.bottom;
+width = 1100 - margin.left - margin.right;
 // set x and y axes bounds and positions
 var x = d3.scale.ordinal().rangeRoundBands([0,width], .05);
 var y = d3.scale.linear().range([height, 0]);
